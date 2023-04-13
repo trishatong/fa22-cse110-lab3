@@ -10,7 +10,7 @@
       <span><div>jump ahead:</div></span> 
       <nav>
         <ul>
-          <li><a href="#Places">Places</a></li>
+          <li><a href="#Brainstorming">Brainstorming</a></li>
           <li><a href="#Food">Food</a></li>
           <li><a href="#Activities">Activities</a></li>
         </ul>
@@ -52,10 +52,11 @@
           <li>Jane has bad allergies, so this option was ruled out.</li>
         </ul>
         <li><b>Legoland</b></li>
+        <a href="https://www.legoland.com/california/">Buy Tickets</a>
         <ul>
           <li>Only for until lunchtime.</li>
         </ul>
-        <img src="legoland.jpg" alt="legoland" width="200" height="100">
+        <img src="images/legoland.jpg" alt="legoland" width="200" height="100">
         <li>"The hill"</li>
         <ul>
           <li>Seemed pretty but too boring.</li>
@@ -69,8 +70,10 @@
       <h3>Food</h3>
       <ul>
         <li><b>Beach Plum Kitchen</b></li>
+        <img src="images/beach plum kitchen.jpeg" alt="beach plum kitchen" width="175" height="125">
         <li>Swami's Cafe</li>
         <li><b>Beach City Smoothies</b></li>
+        <img src="images/beach city smoothies.jpg" alt="beach city smoothies" width="180" height="120">
         <ul>
           <li>Will pair well with the beach.</li>
         </ul>
@@ -79,11 +82,17 @@
           <li>Too expensive.</li>
         </ul>
         <li><b>264 Fresco</b></li>
+        <img src="images/fresco 264.jpg" alt="fresco 264" width="200" height="100">
         <li><b>Handel's</b></li>
+        <img src="images/handels.jpg" alt="handel's" width="180" height="120">
       </ul>
       <h3>Activities</h3>
       <ul>
         <li><b>Go to the beach</b></li>
+        <details>
+          <summary>Click to see details.</summary>
+          <p>Terramar, Frazee, Ponto, Tamarack</p>
+        </details>
         <ul>
           <li>After Legoland.</li>
           <li>Jane will bring spikeball.</li>
@@ -115,9 +124,74 @@
       <hr>
       <h2>Adjournment</h2>
       <p>All the potential plans have been discussed, decided on, and documented. Trisha adjourned the meeting at 3pm.</p>
+      <hr>
+      <h2>Audio and Video</h2>
+      <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+      <hr>
+      <section>
+        <h2>unrelated form:</h2>
+        <form>
+          <fieldset>
+            <legend>What's your name?</legend>
+            <label for="name">name: </label>
+            <input type="text", id="name", name="name">
+          </fieldset><br>
+          <fieldset>
+            <legend>How old are you?</legend>
+            <label for="age">select your age: </label>
+            <input list="age">
+            <datalist id="age">
+              <select name="age" id="age-select">
+              <option value="toddler (0-2 yrs)">
+              <option value="child (2-12 yrs)">
+              <option value="teen (13-19 yrs)">
+              <option value="young adult (18-25 yrs)">
+              <option value="adult (26-45 yrs)">
+              <option value="middle-aged (46-64 yrs)">
+              <option value="senior citizen (65+ yrs)">
+              </select>
+            </datalist>
+          </fieldset><br>
+          <fieldset>
+            <legend>Tell me about your day:</legend>
+            <textarea rows="5", cols="50", name="description"></textarea>
+          </fieldset><br>
+          <fieldset>
+            <legend>Did you make your bed today?</legend>
+            <input type="checkbox", id="yes", name="yes">
+            <label for="yes">yes</label><br>
+            <input type="checkbox", id="no", name="no">
+            <label for="no">no</label><br>
+          </fieldset><br>
+          <fieldset>
+            <legend>Favorite meal of the day</legend>
+            <input type="radio", id="breakfast", name="breakfast">
+            <label for="breakfast">breakfast</label><br>
+            <input type="radio", id="lunch", name="lunch">
+            <label for="lunch">lunch</label><br>
+            <input type="radio", id="dinner", name="dinner">
+            <label for="dinner">dinner</label><br>
+          </fieldset><br>
+          <fieldset>
+            <legend>When do you graduate?</legend>
+            <label for="date">date: </label>
+            <input type="date", id="graduation date" name="graduation date">
+          </fieldset><br>
+          <button name="button" type="button">Click me for no reason</button>  
+        </form>
+      </section>
     </main>
     <footer>
-
+      <p>Created by: Trisha Tong</p>
     </footer>
   </body>
 </html>

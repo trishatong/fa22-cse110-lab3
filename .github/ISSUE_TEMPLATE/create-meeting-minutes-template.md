@@ -2,7 +2,7 @@
 name: Create meeting minutes template
 about: Record meeting minutes
 title: ''
-labels: documentation, question
+labels: documentation, media, question
 assignees: trishatong
 
 ---

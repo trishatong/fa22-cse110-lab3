@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-https://trishatong.github.io/Lab2_Starter/
+https://trishatong.github.io/fa22-cse110-lab3/

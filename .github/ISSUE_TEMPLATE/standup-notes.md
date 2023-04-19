@@ -2,7 +2,7 @@
 name: Standup notes
 about: Give an update on your status
 title: ''
-labels: ''
+labels: question, standup notes
 assignees: trishatong
 
 ---

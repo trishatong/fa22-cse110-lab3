@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+  }
+  
+  /*properties of date class*/
+  p.date {
+    color: rgb(32,42,68);
+    height: 18px;
+    width: 600px;
+  }
+  /*properties of title ID*/
+  #title {
+    text-decoration: underline;
+    max-height: 50px;
+    max-width: 500px;
+    text-align: left;
+    color: teal;
+    margin-left: 1px;
+  }

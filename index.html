@@ -5,6 +5,9 @@
     <title>Lab Week 2: Meeting Note</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico.png">
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     <style>
     body {
       background-color: floralwhite;
@@ -25,14 +28,13 @@
       <a href="https://visitcarlsbad.com/">Carlsbad</a> |
       <a href="https://github.com/trishatong/Lab2_Starter">My Repo</a> |
       <a href="https://canvas.ucsd.edu/courses/44983">CSE 110 Canvas</a> |
-  </nav>c:\Users\trton\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.html
     <main>
       <p class = "fixed">Lab 3!</p>
       <p class = "sticky">I am a green box</p>
       <h1 id = "title">Meeting Minutes</h1>
       <h2 style="color:blue;text-align:left;">Call to Order</h2>
       <p class ="date">This meeting was held on April 12, 2023 at UCSD at 2pm. It was facilitated by Trisha Tong.</p>
-      <h2>Attendance</h2>
+      <h2 class = "attendance">Attendance</h2>
       <h3>Present</h3>
       <ul class = "attendance-box">
         <li>Dirk</li>
@@ -44,7 +46,7 @@
         <li>Jake</li>
         <li>Dave</li>
       </ul>
-      <h2>Agenda</h2>
+      <h2 class = "agenda">Agenda</h2>
       <ol class = "agenda-box">
         <li>Decide on what places to visit.</li>
         <li>Make a list of food places to try.</li>
@@ -65,7 +67,7 @@
           </ul>
         </li>
         <li><b>Legoland</b>
-          <a href="https://www.legoland.com/california/">Buy Tickets</a>
+          <a href="https://www.legoland.com/california/" target = "click">Buy Tickets</a>
           <ul>
             <li>Only for until lunchtime.</li>
           </ul>
@@ -82,7 +84,7 @@
           </ul>
         </li>
       </ul>
-      <h3>Food</h3>
+      <h3 class = "food">Food</h3>
       <ul>
         <li><b>Beach Plum Kitchen</b></li>
         <li>Swami's Cafe</li>
@@ -125,17 +127,20 @@
       <hr>
       <h2>Questions/Comments/Concerns</h2>
       <ul>
-        <li>Dirk gets tired at night, won't be able to drive home.
+        <li class = "comments">
+          <div>Dirk gets tired at night, won't be able to drive home.</div>
           <ul>
             <li><strong>Jake</strong> will take over.</li>
           </ul>
         </li>
-        <li>Rose is lactose-intolerant.
+        <li class = "comments">
+          <div>Rose is lactose-intolerant.</div>
           <ul>
             <li>She will bring a lactaid and take it before Handel's.</li>
           </ul>
         </li>
-        <li>Dave has been missing the past 2 meetings, where is he? Asked by <i>Jane</i>.
+        <li class = "comments">
+          <div>Dave has been missing the past 2 meetings, where is he? Asked by <i>Jane</i>.</div>
           <ul>
             <li>He's been sick.</li>
           </ul>
@@ -161,8 +166,14 @@
         <source src="IMG_3678.MOV" type="video/ogg">
       Your browser does not support the video tag.
       </video>
-      <div class="myDiv">
-        <p>This sentence is <span></span>irrelevant.</p>
+      <div class="irrelevant-div">
+        <p>This sentence is <span class = "irrelevant">irrelevant</span>.</p>
+        <span>
+          You can ignore this.
+          <span>
+            This too!
+          </span>
+        </span>
       </div>
       <hr>
       <div class="flex-container">

@@ -47,11 +47,6 @@ body {
     border-radius: 1px 1px;
   }
 
-  /*CHANGE FONT!!!!!!!!!!!!!!!!!!!!!*/
-  * {
-    font-family:'Times New Roman', Times, serif;
-  }
-
   p.display {
     display: block;
   }
@@ -97,6 +92,38 @@ body {
     column-gap: 50px;
     row-gap: 20px;
 }
-  /* layouts ... */
-  /* selectors */
-  
+
+h2.attendance, h2.agenda {
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+* {
+  color: black;
+}
+
+a[target = click] {
+  background-color: yellow;
+}
+
+li {
+  list-style-type: disc;
+}
+
+li.comments li {
+  list-style-type: square;
+}
+
+span.irrelevant {
+  color: lightblue;
+}
+div.irrelevant-div > span {
+  color: green;
+}
+
+div ~ section {
+  background-color: beige;
+}
+
+.food + ul {
+  background-color: #f5f5f5;
+}

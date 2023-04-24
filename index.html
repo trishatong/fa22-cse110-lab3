@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="mystyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bruno+Ace+SC&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     <style>
-    body {
-      background-color: floralwhite;
-    }
     @media only screen and (max-width: 1000px) {
       body {
         background-color: rgb(187, 214, 223);
@@ -30,18 +27,18 @@
       <a href="https://canvas.ucsd.edu/courses/44983">CSE 110 Canvas</a> |
     <main>
       <p class = "fixed">Lab 3!</p>
-      <p class = "sticky">I am a green box</p>
+      <p class = "sticky">welcome</p>
       <h1 id = "title">Meeting Minutes</h1>
-      <h2 style="color:blue;text-align:left;">Call to Order</h2>
+      <h2 style="color:navy;text-align:left;height:15px">Call to Order</h2>
       <p class ="date">This meeting was held on April 12, 2023 at UCSD at 2pm. It was facilitated by Trisha Tong.</p>
       <h2 class = "attendance">Attendance</h2>
-      <h3>Present</h3>
+      <h3 class = "specific-attendance">Present</h3>
       <ul class = "attendance-box">
         <li>Dirk</li>
         <li>Rose</li>
         <li>Jane</li>
       </ul>
-      <h3>Absent</h3>
+      <h3 class = "specific-attendance">Absent</h3>
       <ul class = "attendance-box">
         <li>Jake</li>
         <li>Dave</li>
@@ -52,13 +49,13 @@
         <li>Make a list of food places to try.</li>
         <li>Identify activities we want to do.</li>
       </ol>
-      <h2>Unfinished Business</h2>
+      <h2 class = "unfinished">Unfinished Business</h2>
       <p>Settled on visiting <em>Carlsbad</em> and how carpooling will work. Need to pick <i>what to do.</i><br>
       <strong>Dirk</strong> is driving Rose and Jake, <strong>Jane</strong> is driving Dave.</p>
-      <h2>New Business</h2>
+      <h2 class = "new">New Business</h2>
       <p class = "display">Brainstorm places, foods, and activities to try.</p>
       <hr>
-      <h2>Brainstorming</h2>
+      <h2 class = "brainstorming">Brainstorming</h2>
       <h3>Places</h3>
       <ul>
         <li>The Flower Fields
@@ -125,7 +122,7 @@
         <li>Shop at the Carlsbad Premium Outlets</li>
       </ul>
       <hr>
-      <h2>Questions/Comments/Concerns</h2>
+      <h2 class = "qcc">Questions/Comments/Concerns</h2>
       <ul>
         <li class = "comments">
           <div>Dirk gets tired at night, won't be able to drive home.</div>
@@ -147,10 +144,10 @@
         </li>
       </ul>
       <hr>
-      <h2>Adjournment</h2>
+      <h2 class = "adjournment">Adjournment</h2>
       <p class = "inline-display">All the potential plans have been discussed, decided on, and documented. Trisha adjourned the meeting at 3pm.</p>
       <hr>
-      <h2>Pictures, Audio, and Video</h2>
+      <h2 class = "pav">Pictures, Audio, and Video</h2>
       <img src="images/legoland.jpg" alt="legoland" width="200" height="100">
       <img src="images/beach-plum-kitchen.jpeg" alt="beach plum kitchen" width="175" height="125">
       <img src="images/beach-city-smoothies.jpg" alt="beach city smoothies" width="180" height="120">
@@ -166,8 +163,29 @@
         <source src="IMG_3678.MOV" type="video/ogg">
       Your browser does not support the video tag.
       </video>
+
+      <div class = "flex">
+        <div class = "meeting">M</div>
+        <div class = "meeting">E</div>
+        <div class = "meeting">E</div>
+        <div class = "meeting">T</div>
+        <div class = "meeting">I</div>
+        <div class = "meeting">N</div>
+        <div class = "meeting">G</div>
+      </div>
+      <div class = "graph">
+        <div class = "minutes">M</div>
+        <div class = "minutes">I</div>
+        <div class = "minutes">N</div>
+        <div class = "minutes">U</div>
+        <div class = "minutes">T</div>
+        <div class = "minutes">E</div>
+        <div class = "minutes">S</div>
+      </div>
+
+
       <div class="irrelevant-div">
-        <p>This sentence is <span class = "irrelevant">irrelevant</span>.</p>
+        <p>Meeting is <span class = "irrelevant">over</span>.</p>
         <span>
           You can ignore this.
           <span>

@@ -1,42 +1,111 @@
-px, em, lh, cm, 
 body {
-    background-color: white;
+    background-color: #D6F5FF;
   }
   /*properties of date class*/
   p.date {
     color: rgb(32,42,68);
-    height: 18px;
-    width: 600px;
+    height: 25px; /*height of element*/
+    width: 600px; /*width of element*/
   }
   /*properties of title ID*/
   #title {
-    text-decoration: underline;
-    max-height: 50px;
-    max-width: 500px;
-    text-align: left;
-    color: teal;
-    margin-left: 1px;
+    border-radius: 15px; /*rounded border*/
+    padding: 2px 2px 8px 2px; /*inner space around element; shorthand: <top> <right> <bottom> <left>*/
+    background-color: #AFD0DB; /*background color hex color code*/
+    text-decoration: underline; /*underlined*/
+    max-height: auto; /*max height of element*/
+    max-width: 300px; /*max width of element*/
+    text-align: center; /*specifies horizontal alignment of text*/
+    margin: 20px 600px 20px 600px; /*space surrounding element; shorthand: <top> <right> <bottom> <left>*/
+    font-size: 35px; /*size of font inside element*/
   }
+  
+  /*sticky element scrolls along with container*/
+  .sticky {
+    position: sticky;
+    bottom: 50px; /*vertical position of element*/
+    right: 50px; /*horizontal position of element*/
+    width: 74px;
+    border: 2px solid black; /*thickness of border*/
+    background-color: #AFD0DB;
+    margin-left: 37.25cm;
+    margin-top: 1mm;
+    padding-left: 1px;
+    text-align: center
+  }
+
+  /*fixed element stays in place while scrolling*/
+  p.fixed {
+    position: fixed;
+    bottom: 0mm;
+    right: 3mm;
+    width: auto;
+    border: 1px solid black;
+    background-color: hsl(300, 100%, 95%);
+    text-align: center;
+    padding: 1px 2px 1px 2px;
+  }
+
   /*auto margin form title*/
   h2.centered-form {
     margin: auto;
   }
+
+  /*background for headings*/
+  h2.attendance, h2.agenda, h2.unfinished, h2.new, h2.brainstorming, h2.qcc, h2.adjournment, h2.pav {
+    border-radius: 15px; /*rounded border*/
+    padding: 2px 2px 2px 2px; /*inner space around element; shorthand: <top> <right> <bottom> <left>*/
+    background-color: #AFD0DB; /*background color hex color code*/
+    text-align: center;
+  }
+
+  h3.specific-attendance {
+    font-family: 'Barlow', sans-serif;
+  }
+
+  /*different margins to accomodated word-length*/
+  h2.attendance {
+    margin-right: 1370px;
+  }
+  h2.agenda {
+    margin-right: 1410px;
+  }
+  h2.unfinished {
+    margin-right: 1278px;
+  }
+  h2.new {
+    margin-right: 1340px;
+  }
+  h2.brainstorming {
+    margin-right: 1328px;
+  }
+  h2.qcc {
+    margin-right: 1156px;
+  }
+  h2.adjournment {
+    margin-right: 1342px;
+  }
+  h2.pav {
+    margin-right: 1210px;
+  }
+
   /*attendance box; shorthand margin and padding*/
   ul.attendance-box {
-    width: 4vh;
-    height: 3lh;
+    width: 4vh; /*vh: Relative to 1% of the height of the browser window size (viewport)*/
+    height: 3lh; /*lh: line height*/
     margin: 10px 1px 10px 1px;
     padding: 15px 20px 15px 30px;
     border: 1px solid black;
     background-color: #F0FFFF;
   }
+  
   /*agenda box; longhand margin and padding*/
   ol.agenda-box {
     min-width: 180px;
     max-height: 100px;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 1em; 
+    margin-left: 0em; 
     margin-right: 75em;
     padding-top: 15px;
     padding-bottom: 20px;
@@ -46,38 +115,65 @@ body {
     border-color: black;
     border-width: 1px;
     border-radius: 1px 1px;
+    background-color: #F0FFFF;
   }
 
   p.display {
     display: block;
-  }
+  }                                   /*!!!!!!!!!!*/
   p.inline-display {
     display: inline-block;
   }
 
-  p.fixed {
-    position: fixed;
-    bottom: 0mm;
-    right: 0mm;
-    width: auto;
-    border: 1px solid black;
-    background-color: hsl(300, 100%, 95%);
+  /*flex container*/
+  .flex {
+    display: flex;
+    background-color: #729aa7;
+    justify-content: center; /*centers text*/
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 570px;
+    margin-right: 570px;    
   }
-  p.sticky {
-    position: sticky;
-    bottom: 50px;
-    right: 50px;
-    width: 74px;
-    border: 1mm solid black;
-    background-color: green;
-    margin-left: 1cm;
-    padding-left: 10px;
+  /*applies to individual elements in flex container*/
+  .flex > div.meeting {
+    text-align: center;
+    background-color: white;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 2px; /*rounded border*/
   }
+
+  /*graph container*/
+  .graph {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 720px 5px 720px;
+    justify-self: center;
+    background-color: #729aa7;
+  }
+  /*applies to individual elements in graph container*/
+  .graph > div.minutes {
+    text-align: center;
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    margin: auto;
+    border-radius: 2px; /*rounded border*/
+  }
+
+  /*changes color of button*/
   button:hover {
     background-color: orange;
   }
   .active-button:active {
     box-shadow: 2px 2px 5px #FFA500;
+}
+
+/*changes color of the word "over"*/
+span.irrelevant {
+  color: lightblue;
 }
 
 .flex-container {
@@ -94,14 +190,11 @@ body {
     row-gap: 20px;
 }
 
-h2.attendance, h2.agenda {
-  font-family: 'Bruno Ace SC', cursive;
-}
-
 * {
   color: black;
 }
 
+/*attribute selector*/
 a[target = click] {
   background-color: yellow;
 }
@@ -114,17 +207,19 @@ li.comments li {
   list-style-type: square;
 }
 
-span.irrelevant {
-  color: lightblue;
-}
+
 div.irrelevant-div > span {
   color: green;
 }
 
 div ~ section {
-  background-color: beige;
+  background-color: #AFD0DB;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
 
-.food + ul {
+.qcc + ul {
   background-color: #f5f5f5;
+  margin-right: 1025px;
+  border-radius: 10px;
 }

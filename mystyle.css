@@ -13,7 +13,7 @@ body {
     padding: 2px 2px 8px 2px; /*inner space around element; shorthand: <top> <right> <bottom> <left>*/
     background-color: #AFD0DB; /*background color hex color code*/
     text-decoration: underline; /*underlined*/
-    max-height: 100px; /*max height of element*/
+    max-height: auto; /*max height of element*/
     max-width: 300px; /*max width of element*/
     text-align: center; /*specifies horizontal alignment of text*/
     margin: 20px 600px 20px 600px; /*space surrounding element; shorthand: <top> <right> <bottom> <left>*/

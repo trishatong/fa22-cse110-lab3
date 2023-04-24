@@ -3,7 +3,7 @@ body {
   }
   /*properties of date class*/
   p.date {
-    color: rgb(32,42,68);
+    color: rgb(32,42,68); /*sets color of text*/
     height: 25px; /*height of element*/
     width: 600px; /*width of element*/
   }
@@ -120,7 +120,7 @@ body {
 
   p.display {
     display: block;
-  }                                   /*!!!!!!!!!!*/
+  }
   p.inline-display {
     display: inline-block;
   }
@@ -176,20 +176,7 @@ span.irrelevant {
   color: lightblue;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: space-between;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-areas: ". . .";
-    column-gap: 50px;
-    row-gap: 20px;
-}
-
+/*universal selector*/
 * {
   color: black;
 }
@@ -199,25 +186,29 @@ a[target = click] {
   background-color: yellow;
 }
 
+/*element selector changes bullets to disc shape*/
 li {
   list-style-type: disc;
 }
 
+/*descendant combinator changes inner bullets to squares*/
 li.comments li {
   list-style-type: square;
 }
 
-
+/*child combinator*/
 div.irrelevant-div > span {
   color: green;
 }
 
+/*general sibling combinator*/
 div ~ section {
   background-color: #AFD0DB;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
 }
 
+/*adjacent sibling combinator*/
 .qcc + ul {
   background-color: #f5f5f5;
   margin-right: 1025px;
